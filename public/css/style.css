@@ -1,0 +1,142 @@
+/******************************Tag selectors*********************************/
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    background-color:black;
+    color: white;
+    padding:0 10px;
+}
+
+h1{
+    text-align: center;
+    margin-top:70px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2{
+    font-size:7rem;
+}
+
+h3{
+    font-size:1rem;
+    font-family: "Whisper", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/******************************************top section***********************************/
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    height:100vh;
+}
+
+.top-container{
+    text-align: center;
+}
+
+form{
+    text-align: center;
+    margin:20px auto ;
+}
+
+form input[type="text"]{
+    border: 2px solid lightskyblue;
+    border-radius:15px;
+    padding:8px 30px;
+    background-color:rgb(28, 28, 28);
+    color: white;
+    font-weight: bold;
+}
+
+form input[type="text"]::placeholder{
+    color: white;
+}
+
+form input[type="submit"]{
+    border: 2px solid lightskyblue;
+    border-radius:20px;
+    padding:8px 20px;
+    background-color:rgb(28, 28, 28);
+    color: white;
+    font-weight: bold;
+}
+
+.message-1, .message-2{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:2rem;
+    margin:0;
+}
+.condition{
+    font-weight: bold;
+    margin-top:10px;
+}
+
+/*************************************Middle section*********************************/
+
+.weather-container{
+    text-align: center;
+}
+
+.icon-container .temp-meter{
+    text-align: center;
+    padding-top:15px;
+}
+
+.weather-icon{
+    width:40%;
+}
+
+.error-message{
+    color:red;
+}
+
+.feelsLike-message{
+    font-weight:bold;
+    font-size:1.2rem;
+}
+
+.temp-meter{
+    width: 30%;
+    margin-top:15px;
+}
+
+.temp{
+    display: inline-block;
+    font-weight: bold;
+    margin-top:15px;
+}
+
+/*************************************Media queries*********************************/
+
+@media (max-width: 770px) {
+    .icon-container{
+        margin:20px auto;
+    }
+
+    form{
+        margin-bottom:40px;
+    }
+
+    h3{
+        font-size:0.5rem;
+        margin-top:40px;
+    }
+
+    form input[type="text"]{
+        padding:8px 20px;
+    }
+
+    form input[type="submit"]{
+        margin-top:10px;
+    }
+    
+}
